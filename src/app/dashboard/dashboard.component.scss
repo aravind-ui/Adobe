@@ -1,0 +1,87 @@
+.products_section {
+    .products_list {
+        .items {
+            display        : flex;
+            flex-wrap      : wrap;
+            justify-content: center;
+            padding        : 50px 0;
+
+            .product_details {
+                position     : relative;
+                margin       : 10px;
+                padding      : 5px;
+                border-radius: 5px;
+                width        : 275px;
+                box-shadow   : 0 2px 2px 0 rgba(0, 0, 0, 0.25);
+
+                .product_image {
+                    img {
+                        width : 100%;
+                        height: 225px;
+                    }
+                }
+
+                .header {
+                    display        : flex;
+                    align-items    : center;
+                    justify-content: space-between;
+                    margin         : 10px 0;
+
+                    .original_price {
+                        text-decoration: line-through;
+                        margin         : 0 5px;
+                        font-size      : 12px;
+                    }
+
+                    h4 {
+                        margin: 0;
+                    }
+
+                    h3 {
+                        margin     : 0;
+                        font-weight: 800;
+                    }
+
+                }
+
+                p {
+                    margin    : 0;
+                    text-align: justify;
+                }
+
+                .buy_option {
+                    button {
+                        padding         : 10px;
+                        width           : 100%;
+                        background-color: #79d951;
+                        border          : 0;
+                        border-radius   : 2px;
+                        margin-top      : 15px;
+                        cursor          : pointer;
+                        transition      : all 0.3s ease-in-out;
+
+                        &:hover {
+                            background-color: #6bc545;
+                        }
+                    }
+                }
+
+                .discount {
+                    background-color: #c54551;
+                    color           : #fff;
+                    border-radius   : 50%;
+                    font-size       : 12px;
+                    width           : 30px;
+                    height          : 30px;
+                    display         : flex;
+                    align-items     : center;
+                    justify-content : center;
+                    position        : absolute;
+                    top             : 0;
+                    right           : 0;
+                    box-shadow      : 0 2px 2px 0 rgb(0 0 0 / 25%)
+                }
+            }
+        }
+    }
+}
